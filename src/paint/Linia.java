@@ -25,7 +25,8 @@ public class Linia implements Figura{
     public void paint(Graphics g) {
         g.setColor(Color.RED);
         if (x != -1 && y != -1) {
-            g.drawLine(x - 25, y - 25, 50, 50);
+            g.drawRect(x, y, 2,2);
+            g.fillRect(x, y, 2, 2);
         }
     }
 

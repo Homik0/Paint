@@ -37,16 +37,15 @@ public class Panel extends JPanel implements MouseListener, MouseMotionListener 
 
 
     public void mousePressed(MouseEvent e) {
-
+        
     }
 
     public void mouseReleased(MouseEvent e) {
-
+       
     }
 
     public void mouseClicked(MouseEvent e) {
-        lista.add(new Kwadrat(e.getX(), e.getY()));
-        repaint();
+        
     }
 
     public void mouseMoved(MouseEvent e) {
@@ -54,7 +53,8 @@ public class Panel extends JPanel implements MouseListener, MouseMotionListener 
     }
 
     public void mouseDragged(MouseEvent e) {
-
+        lista.add(new Linia(e.getX(), e.getY()));
+        repaint();
     }
 
     public void paint(Graphics g) {
