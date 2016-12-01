@@ -5,8 +5,8 @@
  */
 package paint;
 
-import java.awt.Panel;
-import javax.swing.JFrame;
+import java.awt.*;
+import javax.swing.*;
 
 /**
  *
