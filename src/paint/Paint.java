@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package paint;
+
+import java.awt.Panel;
+import javax.swing.JFrame;
 
 /**
  *
@@ -17,6 +19,12 @@ public class Paint {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JFrame frame = new JFrame();
+        Panel panel = new Panel();
+        frame.setSize(500, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(panel);
+        frame.setVisible(true);
     }
-    
+
 }
